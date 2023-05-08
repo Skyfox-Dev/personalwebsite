@@ -10,35 +10,127 @@ html, body{
     height:100%;
 }
 
+#bgs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 headertext {
-   display: flex;
-   position: absolute;
-   top: 2.5%;
-   left: 2.5%;
-   font-size: 120%;
-   font-family: headerfont;
-   color: white
+  display: flex;
+  position: absolute;
+  top: 2.5vh; /* 2.5% der Viewport-Höhe */
+  left: 2.5vw; /* 2.5% der Viewport-Breite */
+  font-size: 2.5vh; /* 2.5% der Viewport-Höhe */
+  font-family: headerfont;
+  color: white
 }
 
 contact {
-    display: flex;
-    position: absolute;
-    top: 2.5%;
-    right: 2.5%;
-    font-size: 120%;
-    font-family: headerfont;
-    color: white;
- }
+  display: flex;
+  position: absolute;
+  top: 2.5vh; /* 2.5% der Viewport-Höhe */
+  right: 2.5vw; /* 2.5% der Viewport-Breite */
+  font-size: 2.5vh; /* 2.5% der Viewport-Höhe */
+  font-family: headerfont;
+  color: white;
+}
 
- .text-animation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 150%;
-    font-family: headerfont;
-    color: white;
+#contentbody {
+  display: flex;
+  justify-content: center; 
+  position: absolute;
+  align-items: center;
+  top: 32.5%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  max-height: 70%;
+  width: 80%;
+  height: 30%;
+  border-radius: 15px;
+  padding-bottom: 50px;
+}
+
+.text-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 4vh;
+  max-width: 40vh;
+  max-height: 30vh;
+  font-family: headerfont;
+  color: white;
+  animation-name: move-text;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes move-text {
+  0% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+myimg {
+  display: flex;
+  position: absolute;
+  top: -5%;
+  max-width: 25vh;
+  max-height: 25vh;
+  height: 100%;
+  width: 100%;
+  border-radius: 500px;
+}
+
+occupationtext {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  max-width: 55vh;
+  max-height: 4vh;
+  top: 105%;
+  width: 100%;
+  font-size: 2vh;
+  font-family: headerfont;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 120%;
+  max-width: 45vh;
+  max-height: 10vh;
+  width: 100%;
+  height: 100%;
+  font-size: 2vh;
+  font-family: headerfont;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
