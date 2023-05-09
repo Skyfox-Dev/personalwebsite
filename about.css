@@ -1,0 +1,103 @@
+@font-face {
+    font-family: headerfont;
+    src: url(Mom«t___.ttf);
+  }
+
+html, body{
+    padding:0px;
+    margin:0px;
+    background:#000000;
+    height:100%;
+}
+
+#bgs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+headertext {
+  display: flex;
+  position: absolute;
+  top: 2.5vh; /* 2.5% der Viewport-Höhe */
+  left: 2.5vw; /* 2.5% der Viewport-Breite */
+  font-size: 2.5vh; /* 2.5% der Viewport-Höhe */
+  font-family: headerfont;
+  color: white
+}
+
+contact {
+  display: flex;
+  position: absolute;
+  top: 2.5vh; /* 2.5% der Viewport-Höhe */
+  right: 2.5vw; /* 2.5% der Viewport-Breite */
+  font-size: 2.5vh; /* 2.5% der Viewport-Höhe */
+  font-family: headerfont;
+  color: white;
+}
+
+#contentbody {
+  display: flex;
+  justify-content: center; 
+  position: absolute;
+  align-items: center;
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  max-height: 70%;
+  width: 80%;
+  height: 60vh;
+  border-radius: 15px;
+  padding-bottom: 50px;
+}
+
+.text-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 4vh;
+  max-width: 40vh;
+  max-height: 4vh;
+  font-family: headerfont;
+  color: white;
+  animation-name: move-text;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes move-text {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#aboutmetext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    top: -20%;
+    height: 4vh;
+    font-size: 4vh;
+    max-width: 40vh;
+    max-height: 4vh;
+    font-family: headerfont;
+    color: white;
+  }
+
+
+
