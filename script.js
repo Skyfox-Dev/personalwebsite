@@ -13,8 +13,3 @@ function stopmusic() {
 
 }
 
-function setVolume() {
-    var audio = document.getElementById("myAudio");
-    var volumeControl = document.getElementById("volumeControl");
-    audio.volume = volumeControl.value;
-  }
