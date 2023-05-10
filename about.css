@@ -11,9 +11,8 @@ html, body{
 }
 
 #bgs {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  overflow: visible;
+  display: flex;;
   position: relative;
 }
 
@@ -83,21 +82,28 @@ contact {
   }
 }
 
-#aboutmetext {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin-top: 5px;
-    top: -20%;
-    height: 4vh;
-    font-size: 4vh;
-    max-width: 40vh;
-    max-height: 4vh;
-    font-family: headerfont;
-    color: white;
-  }
+
+.desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  position: absolute;
+  top: 5vh;
+}
 
 
-
+#textcontent {
+  display: flex;
+  position: relative;
+  margin-top: 3vh;
+  font-size: 3vh;
+  width: 150%;
+  max-width: 100vh;
+  max-height: 80vh;
+  font-family: 'Segoe UI';
+  color: white;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  margin-bottom: 20vh;
+}

@@ -12,9 +12,7 @@ html, body{
 
 #bgs {
   display: flex;
-  width: 100%;
-  height: 100%;
-  position: relative;
+  position: absolute;
 }
 
 headertext {
@@ -116,7 +114,7 @@ occupationtext {
   position: absolute;
   justify-content: center;
   align-items: center;
-  top: 70%;
+  top: 60%;
   max-width: 75vh;
   max-height: 10vh;
   width: 100%;
@@ -135,3 +133,29 @@ li {
   display: inline;
   margin: 2vw;
 }
+
+
+.controls button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 2vh;
+  font-family: headerfont;
+}
+
+.controls button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.music-player {
+  display: flex;
+  position: absolute;
+  top: 60vh;
+}
+
+
+
+
+
