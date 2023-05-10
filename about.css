@@ -7,14 +7,9 @@ html, body{
     padding:0px;
     margin:0px;
     background:#000000;
-    height:100%;
+    height:100vh;
 }
 
-#bgs {
-  overflow: visible;
-  display: flex;;
-  position: relative;
-}
 
 headertext {
   display: flex;
@@ -90,6 +85,7 @@ contact {
   text-align: left;
   position: absolute;
   top: 5vh;
+  padding-left: 0%;
 }
 
 
@@ -106,4 +102,9 @@ contact {
   padding-top: 10vh;
   padding-bottom: 20vh;
   margin-bottom: 20vh;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
 }
