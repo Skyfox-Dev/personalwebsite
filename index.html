@@ -27,7 +27,9 @@
         </ul>
         </div>
         <div class="music-player">
-            <audio id="myAudio" src="HIRATHAE - Kentenshi.mp3" preload="none"></audio>
+            <audio id="myAudio"  type="audio/aac" preload="none">
+                <source src="https://brokenbeats.net/stream/aac" type="audio/aac">
+            </audio>
             <div class="controls">
               <button id="playBtn" onclick="playmusic()">Some Music</button>
               <button id="pauseBtn" onclick="stopmusic()">Stop</button>
