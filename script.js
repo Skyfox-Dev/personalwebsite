@@ -6,6 +6,7 @@ function playmusic() {
     var audio = document.getElementById("myAudio");
     audio.play();
     songTitle.textContent =  "brokenbeats.net";
+    audio.volume = 0.2;
 }
 
 function stopmusic() {
