@@ -171,7 +171,14 @@ li {
   align-items: center;
   text-align: center;
 }
+#volumeContainer {
+  width: 100x;
+  margin-bottom: 10px;
+}
 
+#volumeSlider {
+  width: 100%;
+}
 
 
 
