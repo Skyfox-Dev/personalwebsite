@@ -4,9 +4,10 @@ var pauseBtn = document.getElementById("pauseBtn");
 
 function playmusic() {
     var audio = document.getElementById("myAudio");
-    audio.play();
-    songTitle.textContent =  "brokenbeats.net";
     audio.volume = 0.2;
+    audio.play();
+    var songTitle = document.getElementById("songTitle");
+    songTitle.textContent = "brokenbeats.net";
 }
 
 function stopmusic() {
