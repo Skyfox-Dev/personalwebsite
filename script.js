@@ -15,5 +15,9 @@ function stopmusic() {
     audio.pause();
 }
 
+function changeVolume(volume) {
+    var audio = document.getElementById("myAudio");
+    audio.volume = volume;
+  }
 
 
