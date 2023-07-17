@@ -59,9 +59,10 @@ contact {
   text-align: center;
   position: relative;
   top: 0%;
-  width: 100%;
+  width: 100vmin;
+  height: 100vmin;
   transform: translate(-50%, -50%);
-  font-size: 4vh;
+  font-size: 4.5vh;
   max-width: 125vw;
   max-height: 20vh;
   font-family: headerfont;
@@ -104,9 +105,9 @@ occupationtext {
   position: absolute;
   max-width: 55vh;
   max-height: 4vh;
-  top: 55%;
+  top: 60%;
   width: 100vmin;
-  font-size: 2vh;
+  font-size: 2.5vh;
   font-family: headerfont;
   color: white;
 }
@@ -116,7 +117,7 @@ occupationtext {
   position: absolute;
   justify-content: center;
   align-items: center;
-  top: 60%;
+  top: 66%;
   max-width: 75vh;
   max-height: 10vh;
   width: 100vmin;

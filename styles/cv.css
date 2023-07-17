@@ -18,6 +18,8 @@ headertext {
   left: 2.5vw; 
   font-size: 2.5vh;
   font-family: headerfont;
+  width: 100vmin;
+  height: 100vmin;
   color: white
 }
 
@@ -66,12 +68,12 @@ contact {
 #contentbody {
   display: flex;
   justify-content: left; 
-  position: absolute;
+  position: relative;
   align-items: center;
-  top: 35%; 
+  margin-top: 35vh; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  width: 70vmin;
+  width: 90vmin;
   height: 30vmin;
   border-radius: 15px;
   background-color: rgb(0, 0, 0, 0.5);
@@ -93,6 +95,7 @@ myimg {
 #desc {
   display: flex;
   position: relative;
+  width: 100vmin;
   top: -20%;
   left: 10%;
   font-family: 'Segoe UI';
@@ -100,5 +103,16 @@ myimg {
 }
 
 name {
-  font-size: 3vh;
+  position: relative;
+  display:flex;
+  font-size: 4vmin;
+}
+
+occupation {
+  position: absolute;
+  display: flex;
+  top: 95%;
+  font-size: 2.5vmin;
+  font-family: headerfont;
+  color: white;
 }
