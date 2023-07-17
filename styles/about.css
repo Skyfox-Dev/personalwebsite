@@ -1,6 +1,6 @@
 @font-face {
     font-family: headerfont;
-    src: url(Mom«t___.ttf);
+    src: url("Cascadia.ttf");
   }
 
 html, body{
@@ -93,11 +93,11 @@ contact {
   display: flex;
   position: relative;
   margin-top: 3vh;
-  font-size: 3vh;
+  font-size: 2.5vh;
   width: 150%;
   max-width: 100vh;
   max-height: 80vh;
-  font-family: 'Segoe UI';
+  font-family: headerfont;
   color: white;
   padding-top: 10vh;
   padding-bottom: 20vh;
