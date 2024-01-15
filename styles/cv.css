@@ -67,52 +67,45 @@ contact {
 
 #contentbody {
   display: flex;
-  justify-content: left; 
-  position: relative;
+  position: fixed;
   align-items: center;
-  margin-top: 35vh; 
+  top: 35%;
+  margin-top: auto; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  width: 90vmin;
+  min-width: 95vmin;
   height: 30vmin;
   border-radius: 15px;
   background-color: rgb(0, 0, 0, 0.5);
 }
 
-myimg {
-  display: flex;
-  position: relative;
-  align-items: center;
-  left: 5%;
-  max-width: 20vmin;
-  max-height: 20vmin;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
 
-#desc {
+#topdesc {
   display: flex;
+  align-items: center;
   position: relative;
   width: 100vmin;
   top: -20%;
-  left: 10%;
   font-family: 'Segoe UI';
   color: white;
 }
 
 name {
   position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display:flex;
-  font-size: 4vmin;
+  font-size: 4vh;
 }
 
 occupation {
   position: absolute;
-  display: flex;
-  top: 95%;
-  font-size: 2.5vmin;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 100vmin;
+  text-align: center;
+  font-size: 2.5vh;
   font-family: headerfont;
   color: white;
 }
@@ -122,6 +115,43 @@ email {
   display: flex;
   top: 95%;
   font-size: 2.5vmin;
+  font-family: headerfont;
+  color: white;
+}
+
+hr {
+  display: flex;
+  border-top: 1px dashed whiter;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 80vmin;
+  top: 250%;
+  font-size: 2.5vh;
+  font-family: headerfont;
+  color: white;
+}
+
+#carreer {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 35%;
+  margin-top: auto; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  min-width: 95vmin;
+  height: 30vmin;
+}
+
+bio {
+  display: flex;
+  position: fixed;
+  margin-top: 15%;
+  text-align: center;
+  min-width: 100vmin;
+  text-align: center;
+  font-size: 2.5vh;
   font-family: headerfont;
   color: white;
 }
