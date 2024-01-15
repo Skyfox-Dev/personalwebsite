@@ -69,12 +69,12 @@ contact {
   display: flex;
   position: fixed;
   align-items: center;
-  top: 35%;
+  top: 45%;
   margin-top: auto; 
   left: 50%; 
   transform: translate(-50%, -50%);
   min-width: 95vmin;
-  height: 30vmin;
+  height: 40vh;
   border-radius: 15px;
   background-color: rgb(0, 0, 0, 0.5);
 }
@@ -136,20 +136,21 @@ hr {
   display: flex;
   position: fixed;
   align-items: center;
+  justify-content: center;
   top: 35%;
   margin-top: auto; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  min-width: 95vmin;
+  min-width: 100vmin;
   height: 30vmin;
 }
 
 bio {
-  display: flex;
-  position: fixed;
-  margin-top: 15%;
-  text-align: center;
-  min-width: 100vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  margin-top: 7.5rem;
+  width: 100vmin;
   text-align: center;
   font-size: 2.5vh;
   font-family: headerfont;
