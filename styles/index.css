@@ -207,5 +207,69 @@ li {
 }
 
 
+#bgs2 {
+  display: flex;
+  position: absolute;
+  background-image: url("https://media.discordapp.net/attachments/1166154620792487956/1226273344823885924/FB_IMG_1709823039586.jpg?ex=66242b0c&is=6611b60c&hm=7bd9ffb36ab886e88822bc1efef04f4ca04e6efb0ac5292bd38aa971614d2136");
+  opacity: 0.4;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
 
+.desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+}
 
+#textcontent {
+  display: flex;
+  position: relative;
+  font-size: 2.5vh;
+  width: 150%;
+  max-width: 90vh;
+  max-height: 80vh;
+  font-family: headerfont;
+  color: white;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  margin-bottom: 20vh;
+}
+
+.text-animationabout {
+  position: relative;
+  transform: translate(-50%, -50%); /* Um den Text absolut zentriert zu positionieren */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 4.5vh;
+  max-width: 125vw;
+  max-height: 20vh;
+  font-family: headerfont;
+  color: white;
+  animation-name: move-text;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move-text {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
