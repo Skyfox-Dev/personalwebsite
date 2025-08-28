@@ -7,7 +7,7 @@ function playmusic() {
     audio.volume = 0.2;
     audio.play();
     var songTitle = document.getElementById("songTitle");
-    songTitle.textContent = "brokenbeats.net";
+    songTitle.textContent = "stream.skyfoxius.de";
 }
 
 function stopmusic() {
