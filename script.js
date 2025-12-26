@@ -18,6 +18,30 @@ function stopmusic() {
 function changeVolume(volume) {
     var audio = document.getElementById("myAudio");
     audio.volume = volume;
-  }
+}
 
+tsParticles.load("tsparticles", {
+  particles: {
+    number: {
+      value: 150, // Anzahl der Schneeflocken
+      density: { enable: true, area: 800 }
+    },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.8 },
+    size: { value: { min: 2, max: 5 } },
+    move: {
+      enable: true,
+      speed: 1,       // Schneefallgeschwindigkeit
+      direction: "bottom",
+      straight: false,
+      outModes: { default: "out" }
+    }
+  },
+  interactivity: {
+    detectsOn: "canvas",
+    events: { onHover: { enable: false }, onClick: { enable: false } }
+  },
+  detectRetina: true
+});
 
