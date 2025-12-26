@@ -35,18 +35,17 @@ main.center {
 }
 
 .controls button {
-  border: 1px solid #fff;      /* weißer Rand */
-  background-color: transparent; /* transparent innen */
-  color: #fff;                  /* weißer Text */
+  border: 1px solid #fff;      
+  background-color: transparent; 
+  color: #fff;                  
   padding: 10px 20px;
-  font-size: 2vh;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .controls button:hover {
-  background-color: #fff; /* Hintergrund weiß beim Hover */
-  color: #000;             /* Text schwarz beim Hover */
+  background-color: #fff; 
+  color: #000;             
 }
 
 #tsparticles {
@@ -55,7 +54,7 @@ main.center {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* damit es hinter allem anderen liegt */
-  pointer-events: none; /* Klicks gehen durch */
+  z-index: -1; 
+  pointer-events: none; 
 }
 

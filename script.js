@@ -20,28 +20,25 @@ function changeVolume(volume) {
     audio.volume = volume;
 }
 
-tsParticles.load("tsparticles", {
-  particles: {
-    number: {
-      value: 150, // Anzahl der Schneeflocken
-      density: { enable: true, area: 800 }
+document.addEventListener("DOMContentLoaded", () => {
+  tsParticles.load("tsparticles", {
+    particles: {
+      number: { value: 150, density: { enable: true, area: 800 } },
+      color: { value: "#626775ff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.4 },
+      size: { value: { min: 2, max: 5 } },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "bottom",
+        straight: false,
+        outModes: { default: "out" }
+      }
     },
-    color: { value: "#ffffff" },
-    shape: { type: "circle" },
-    opacity: { value: 0.8 },
-    size: { value: { min: 2, max: 5 } },
-    move: {
-      enable: true,
-      speed: 1,       // Schneefallgeschwindigkeit
-      direction: "bottom",
-      straight: false,
-      outModes: { default: "out" }
-    }
-  },
-  interactivity: {
-    detectsOn: "canvas",
-    events: { onHover: { enable: false }, onClick: { enable: false } }
-  },
-  detectRetina: true
+    interactivity: { detectsOn: "canvas", events: { onHover: { enable: false }, onClick: { enable: false } } },
+    detectRetina: true
+  });
 });
+
 
