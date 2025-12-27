@@ -17,9 +17,6 @@ main.center {
 .project-card {
   padding: 1rem;
   border-radius: 8px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-  color: #fff;
 }
 .project-card h3 {
   margin-top: 0;

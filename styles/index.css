@@ -7,14 +7,58 @@
   box-shadow: 0 0 50px rgba(0,0,0,0.3); 
 }
 
+.navbar{
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: left; 
+  gap: 5rem;
+  text-decoration: none;
+}
+
+.navbar ul {
+  gap: 1rem;
+}
+
+/* Navbar common link/button styles */
+.navbar a,
+.navbar button,
+.navbar .btn {
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+/* Hover styles for navbar items */
+.navbar a:hover,
+.navbar button:hover,
+.navbar .btn:hover,
+.navbar .secondary:hover {
+  color: #000;
+  background-color: #fff;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+/* Active/current page */
+.navbar .active,
+.navbar .active > a,
+.navbar a.active,
+.navbar button.active,
+.navbar .secondary.active {
+  background-color: #bfbfbf;
+  color: #000;
+}
+
 main.center {
   display: flex;
   flex-direction: column;   
-  justify-content: center;  
   align-items: center;
   gap: 1rem;               
 }
 .text-animation {
+    margin-top: -1.5rem;
     text-align: center;
     animation: move-text 2s ease-in-out infinite;
 }
@@ -34,18 +78,36 @@ main.center {
     top: 5rem;
 }
 
+.button-group .btn {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  color: #fff;
+  border: solid 1px #fff;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-group .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .controls button {
-  border: 1px solid #fff;      
-  background-color: transparent; 
-  color: #fff;                  
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
   padding: 10px 20px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .controls button:hover {
-  background-color: #fff; 
-  color: #000;             
+  background-color: #fff;
+  color: #000;
 }
 
 #tsparticles {
