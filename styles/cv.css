@@ -1,0 +1,10 @@
+/* CV page specific styles */
+
+article {
+    width: 100%;
+    max-width: 800px;
+}
+
+.text-animation {
+    margin-top: 1rem !important;
+}
