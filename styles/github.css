@@ -1,0 +1,46 @@
+main.center {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem !important;
+}
+
+.projects {
+  width: 100%;
+  margin-top: 2rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+.project-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #fff;
+}
+.project-card h3 {
+  margin-top: 0;
+}
+.project-card a {
+  color: #9fd3ff;
+  margin-right: 0.75rem;
+}
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.project-card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-animation {
+    margin-top: 2rem !important;
+    text-align: center;
+    animation: move-text 2s ease-in-out infinite;
+}
