@@ -8,3 +8,10 @@ article {
 .text-animation {
     margin-top: 1rem !important;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  article {
+    padding: 1rem;
+  }
+}

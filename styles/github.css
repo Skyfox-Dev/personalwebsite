@@ -41,3 +41,14 @@ main.center {
     text-align: center;
     animation: move-text 2s ease-in-out infinite;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  main.center {
+    padding: 1rem !important;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
