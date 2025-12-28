@@ -1,0 +1,23 @@
+/* CD page specific styles */
+
+article {
+    width: 100%;
+    max-width: 800px;
+}
+
+.text-animation {
+    margin-top: 1rem !important;
+}
+
+.cd-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+}
+
+.cd-item img {
+    border-radius: 4px;
+}

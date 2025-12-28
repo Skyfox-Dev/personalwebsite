@@ -1,0 +1,15 @@
+/* Tech page specific styles */
+
+article {
+    background-color: #181C25;
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.text-animation {
+    margin-top: 1rem !important;
+}
