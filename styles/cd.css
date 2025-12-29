@@ -9,6 +9,30 @@ article {
     margin-top: 1rem !important;
 }
 
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.filters button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+.filters button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.filters button:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .cd-item {
     display: flex;
     align-items: center;
